@@ -1,11 +1,14 @@
 import React from "react";
-import logo from "./logo.svg";
 import "./App.css";
+import Home from "./Components/Home/Home";
+import Navbar from "./Components/Share/Navbar";
+import "antd/dist/antd.css"; // or 'antd/dist/antd.less'
 
 function App() {
   return (
-    <div className="App">
-      <h1>Hello</h1>
+    <div>
+      <Navbar />
+      <Home />
     </div>
   );
 }
