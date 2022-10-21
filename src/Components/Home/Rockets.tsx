@@ -12,12 +12,14 @@ const Rockets = () => {
   console.log(rockets);
 
   return (
-    <div>
+    <div className=" px-14">
       <h1>Rockets {rockets.length}</h1>
 
-      {rockets.map((rocket) => (
-        <Rocket rocket={rocket}></Rocket>
-      ))}
+      <div className="grid grid-cols-3 gap-y-5">
+        {rockets.map((rocket) => (
+          <Rocket rocket={rocket}></Rocket>
+        ))}
+      </div>
     </div>
   );
 };
